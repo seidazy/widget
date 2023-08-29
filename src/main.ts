@@ -1,0 +1,11 @@
+import Vue from 'vue'
+import App from './App.vue'
+import vueCustomElement from 'vue-custom-element'
+import 'document-register-element/build/document-register-element'
+
+Vue.use(vueCustomElement)
+Vue.customElement('vue-widget', App)
+
+new Vue({
+  render: h => h(App),
+}).$mount('vue-widget')

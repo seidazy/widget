@@ -1,0 +1,1 @@
+export {WeatherMutation} from './WeatherModel'
